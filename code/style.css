@@ -101,7 +101,8 @@ p{
     justify-self: center;
     justify-content: center;
     margin-top: 30px;
-    
+    margin-bottom: 25px;
+    align-content: center;
     flex-wrap: wrap;
     width:100%;
     height: 10%;
@@ -112,11 +113,12 @@ p{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top:-50px;
+  
 }
 .text-lines > p{
     font-size:30;
     font-weight: lighter;
+    margin-bottom: 25px;
 }
 .line{
     width: 13%;
@@ -367,9 +369,7 @@ iframe{
         height: 200px;
     }
     @media screen and (min-width: 767px){
-        *{
-            
-        }
+        
         .main-header{ 
             display: flex;
             justify-self: start;
@@ -398,7 +398,7 @@ iframe{
             margin-top: -100px;
             align-self: flex-start; 
             flex-wrap: wrap; 
-            height: 500px;
+            height: 650px;
         }
         .banner-text{ 
             display: flex;
@@ -412,11 +412,15 @@ iframe{
             letter-spacing: 2px;
         }
         .text-lines > p{ 
+            align-content: center;
             font-size: 45; 
+            
+            
         }
-        .line-box-line{ 
-            margin-top:-60px;
+        .text-lines{
+            margin-bottom: 50px;
         }
+       
         .line{ 
             width: 10%;
         }
@@ -455,6 +459,7 @@ iframe{
             margin-bottom: 60px
         }
         .helper{
+            margin-top: 25px;
             width: 80%;
             display: flex;
             justify-self: center;
@@ -471,17 +476,20 @@ iframe{
             letter-spacing: 1px;
         }
         .containers{
-           
+           margin-top: 25px;
             width: 100%;
-            height: 500px;
+            aspect-ratio: 1/1;
         }
         .containers >div{ 
-            height: 250px;
+            width: 50%;
+            aspect-ratio: 1/1;
         }
         iframe{ 
+           
             height: 450px;
         }
         .mail-us-form{
+            margin-top: 25px;
             width:  88%;justify-content: space-between;
             
         }
@@ -508,6 +516,10 @@ iframe{
         }
         .no-word-spacing{ 
             word-spacing: 6px;
+        }
+        .nav-bar > div:hover{
+            color:rgb(252, 155, 63);
+            cursor: pointer;
         }
         @media screen and (min-width: 1300px){
             .main-header{
@@ -546,7 +558,7 @@ iframe{
                 height: 40px;
             }
             .line-box-line{
-                margin-top: -20px;
+                
             }
             .help1{ 
                 height: calc((70vw/16)*8 );
@@ -609,6 +621,7 @@ iframe{
                 height: 380px;
             }
             .mail-us-form{
+                margin-top: 25px;
                 width: 70%;
             }
             .mail-us-form> input{ 
@@ -622,4 +635,29 @@ iframe{
         }
     }
 
+}
+@font-face {
+    font-family: "Robo-Black";
+    src: url("../pictures/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: "Glyp";
+    src: url("../pictures/fontawesome-webfont.ttf");
+}
+*{
+    font-family: "Robo-Black";
+}
+.containers{
+    font-family: "Glyp";
+}
+.rev-text{
+    font-family: "Glyp";
+    word-spacing: -2px;
+}
+.banner-button{
+    font-family: "Glyp";
+    font-weight: bold;
+}
+.banner-button:hover{
+    cursor: pointer;
 }
