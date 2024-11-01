@@ -66,7 +66,7 @@ p{
 .banner-div{ 
     width: 100%;
     height: 35%;
-    background-image: url("../pictures/banner3.jpg") ;
+    background-image: url("./pictures/banner3.jpg") ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -638,11 +638,11 @@ iframe{
 }
 @font-face {
     font-family: "Robo-Black";
-    src: url("../pictures/Roboto-Black.ttf");
+    src: url("./pictures/Roboto-Black.ttf");
 }
 @font-face {
     font-family: "Glyp";
-    src: url("../pictures/fontawesome-webfont.ttf");
+    src: url("./pictures/fontawesome-webfont.ttf");
 }
 *{
     font-family: "Robo-Black";
